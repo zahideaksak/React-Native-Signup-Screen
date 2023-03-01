@@ -9,7 +9,7 @@ export const OnBoarding: FC<any> = ({ navigation }) => {
                 <View style={styles.topView}>
                     <Image source={require("../../assets/Logo.png")} />
                     <Text style={styles.topViewText}>
-                        Are you not a <Text style={styles.boldText}>NIKE</Text> club member?{" "}
+                        Are you not a <Text style={styles.boldText}>NIKE</Text> club member?
                     </Text>
                     <Text>Join us and start running</Text>
                 </View>
