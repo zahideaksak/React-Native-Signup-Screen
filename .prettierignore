@@ -1,0 +1,10 @@
+.*
+web
+**/*.svg
+**/*.jpg
+**/*.png
+ios
+android
+build
+./svgrrc
+@redux
