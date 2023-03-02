@@ -25,7 +25,7 @@ export const Register: FC<any> = ({ navigation }) => {
                     <Icon
                         name="arrowleft"
                         style={styles.iconArrowLeft}
-                        onPress={() => navigation.navigate("Splash")}
+                        onPress={() => navigation.goBack()}
                     />
                     <Text style={styles.textSignup}>SIGNUP</Text>
                     <Text>
