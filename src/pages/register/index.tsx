@@ -1,6 +1,7 @@
 import React, { FC, useState } from "react";
 import { SafeAreaView, Text, TextInput, View, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/AntDesign";
+import { Button } from "..";
 import { styles } from "./styled";
 
 export const Register: FC<any> = ({ navigation }) => {
@@ -74,9 +75,7 @@ export const Register: FC<any> = ({ navigation }) => {
                     </Text>
                 </View>
                 <View style={styles.btnView}>
-                    <TouchableOpacity style={styles.btn}>
-                        <Text style={styles.btnText}>JOIN US</Text>
-                    </TouchableOpacity>
+                    <Button tittle="JOIN US" />
                 </View>
             </View>
         </SafeAreaView>

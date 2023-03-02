@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { View, SafeAreaView, Image, TouchableOpacity, Text, StatusBar } from "react-native";
+import { Button } from "..";
 import { styles } from "./styled";
 
 export const OnBoarding: FC<any> = ({ navigation }) => {
@@ -14,11 +15,7 @@ export const OnBoarding: FC<any> = ({ navigation }) => {
                     <Text>Join us and start running</Text>
                 </View>
                 <View style={styles.btnView}>
-                    <TouchableOpacity
-                        style={styles.btn}
-                        onPress={() => navigation.navigate("Register")}>
-                        <Text style={styles.btnText}>SIGNUP</Text>
-                    </TouchableOpacity>
+                    <Button tittle="SIGNUP" onPress={() => navigation.navigate("Register")} />
                 </View>
                 <View style={styles.bottomView}>
                     <Text style={styles.btnText2}>Already have an account?</Text>

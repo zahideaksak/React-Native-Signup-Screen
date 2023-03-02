@@ -99,21 +99,4 @@ export const styles = StyleSheet.create({
     btnView: {
         marginTop: 90,
     },
-    btn: {
-        height: 50,
-        width: "100%",
-        borderRadius: 30,
-        borderWidth: 1,
-        backgroundColor: "#000",
-        marginTop: 100,
-    },
-    btnText: {
-        color: "#FFF",
-        textAlign: "center",
-        fontSize: 18,
-        fontWeight: "900",
-        alignItems: "center",
-        paddingVertical: 15,
-        paddingHorizontal: 10,
-    },
 });
