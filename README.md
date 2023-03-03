@@ -1,7 +1,5 @@
 # React Native: NIKE OnBoarding, Login, Signup UI
 
-<br/>
-
 ## About
 
 #### This repo contains the onboarding, login signup pages of the nike app
