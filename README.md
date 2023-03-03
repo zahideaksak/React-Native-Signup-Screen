@@ -2,10 +2,10 @@
 
 <br/>
 
-# About
+## About
 
-#### This repo contains the UI of the onboarding, login, signup pages of the nike app
+#### This repo contains the onboarding, login signup pages of the nike app
 
-<img src="./src/assets/onboarding.png"/>
-<img src="./src/assets/signin.png"/>
-<img src="./src/assets/signup.png"/>
+<p align="center"><img src="./src/assets/onboarding.png" width="400" /> </p>
+<p align="center"><img src="./src/assets/signin.png" width="400"/>
+<img src="./src/assets/signup.png" width="400"/> </p>
