@@ -80,7 +80,6 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 10,
         borderRadius: 7,
         backgroundColor: "#ededed",
-        marginBottom: 8,
         fontSize: 13,
         position: "relative",
         width: "100%",
