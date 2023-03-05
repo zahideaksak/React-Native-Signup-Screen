@@ -1,4 +1,4 @@
-# React Native: NIKE OnBoarding, Login, Signup UI
+# React Native: NIKE App
 
 ## About
 
