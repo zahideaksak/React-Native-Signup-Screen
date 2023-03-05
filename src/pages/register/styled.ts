@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
         paddingBottom: 7,
         paddingTop: 15,
         paddingLeft: 6,
-        color: "#3f3f3f",
+        color: "#000",
         fontSize: 13,
     },
     inputNameView: {

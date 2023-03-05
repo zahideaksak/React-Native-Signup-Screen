@@ -7,7 +7,7 @@ import { styles } from "./styled";
 export const Register: FC<any> = ({ navigation }) => {
     const [data, setData] = React.useState({
         name: "The Pesante",
-        email: "@nike.com",
+        email: "",
         password: "",
     });
     const [hidePass, setHidePass] = useState(true);
@@ -49,6 +49,7 @@ export const Register: FC<any> = ({ navigation }) => {
                         <TextInput
                             style={styles.inputEmail}
                             placeholder="@nike.com"
+                            placeholderTextColor="#999"
                             value={data.email}
                             onChangeText={text => handleChange("email", text)}
                         />
