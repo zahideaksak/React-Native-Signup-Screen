@@ -3,21 +3,23 @@ import { SafeAreaView, Text, TextInput, View, TouchableOpacity } from "react-nat
 import Icon from "react-native-vector-icons/AntDesign";
 import { Button } from "..";
 import { styles } from "./styled";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Login: FC<any> = ({ navigation }) => {
     const [data, setData] = React.useState({
-        name: "The Pesante",
+        name: "",
         email: "",
         password: "",
     });
     const [hidePass, setHidePass] = useState(true);
-
     const handleChange = (name: string, value: string) => {
         setData({
             ...data, //eski datayı korumak için
             [name]: value,
         });
     };
+    const dispatch = useDispatch();
+    //const { GeneralResponse } = useSelector(state => state);
 
     return (
         <SafeAreaView>
