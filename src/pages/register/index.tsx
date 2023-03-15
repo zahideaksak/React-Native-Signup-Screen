@@ -3,8 +3,10 @@ import { SafeAreaView, Text, TextInput, View, TouchableOpacity } from "react-nat
 import Icon from "react-native-vector-icons/AntDesign";
 import { Button } from "..";
 import { styles } from "./styled";
+import { useDispatch } from "react-redux";
 
 export const Register: FC<any> = ({ navigation }) => {
+    const dispatch = useDispatch();
     const [data, setData] = React.useState({
         name: "The Pesante",
         email: "",
@@ -76,7 +78,18 @@ export const Register: FC<any> = ({ navigation }) => {
                     </Text>
                 </View>
                 <View style={styles.btnView}>
-                    <Button tittle="JOIN US" />
+                    <Button
+                        tittle="JOIN US"
+                        // onPress={() => {
+                        //     dispatch(
+                        //         AddUser({
+                        //             name: data.name,
+                        //             email: data.email,
+                        //             password: data.password,
+                        //         }),
+                        //     );
+                        // }}
+                    />
                 </View>
             </View>
         </SafeAreaView>

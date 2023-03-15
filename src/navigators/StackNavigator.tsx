@@ -3,13 +3,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Login, Register, OnBoarding } from "../pages";
 import { Provider } from "react-redux";
-import { legacy_createStore } from "redux";
-import reducers from "../redux/reducers";
+import store from "../redux/store";
 
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
-    const store = legacy_createStore(reducers);
     return (
         <Provider store={store}>
             <NavigationContainer>

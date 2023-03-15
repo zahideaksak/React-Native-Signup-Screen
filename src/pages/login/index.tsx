@@ -4,12 +4,14 @@ import Icon from "react-native-vector-icons/AntDesign";
 import { Button } from "..";
 import { styles } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
+import { setLoginUser } from "../../redux/reducers/userReducer";
 
 export const Login: FC<any> = ({ navigation }) => {
+    const { email, name, password } = useSelector<any>(state => state);
     const [data, setData] = React.useState({
-        name: "",
-        email: "",
-        password: "",
+        name: name,
+        email: email,
+        password: password,
     });
     const [hidePass, setHidePass] = useState(true);
     const handleChange = (name: string, value: string) => {
@@ -19,8 +21,8 @@ export const Login: FC<any> = ({ navigation }) => {
         });
     };
     const dispatch = useDispatch();
-    //const { GeneralResponse } = useSelector(state => state);
 
+    console.log("General Reponse", email, name, password);
     return (
         <SafeAreaView>
             <View style={styles.container}>
@@ -78,7 +80,7 @@ export const Login: FC<any> = ({ navigation }) => {
                     </Text>
                 </View>
                 <View style={styles.btnView}>
-                    <Button tittle="SIGN IN" />
+                    <Button tittle="SIGN IN" onPress={() => dispatch(setLoginUser(data))} />
                 </View>
             </View>
         </SafeAreaView>
